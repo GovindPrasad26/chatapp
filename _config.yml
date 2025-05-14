@@ -1,0 +1,4 @@
+exclude:
+  - node_modules
+  - chatdude-server/node_modules
+  - chatdude-client/node_modules
