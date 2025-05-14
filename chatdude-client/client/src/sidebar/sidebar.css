@@ -1,0 +1,6 @@
+
+.sidebar{
+    background-color:skyblue;
+   display: grid;
+   grid-template-rows: 10% 90%;
+}
