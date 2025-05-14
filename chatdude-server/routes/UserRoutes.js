@@ -82,27 +82,6 @@ route.get('/username',verifytoken,(req,res)=>{
 
 
 
-// route.get("/getAllUsersdata", verifytoken, async (req, res) => {
-//   try {
-//     const chats = await ConnectionData('chats');
-//     const currentUserId = new ObjectId(req.userdata._id); // 🔄 Convert string to ObjectId
-//     console.log(currentUserId, 'executed');
 
-//     const data = await chats.find({ _id: { $ne: currentUserId } }).toArray();
-
-//     res.send({
-//       ok: true,
-//       result: data
-//     });
-
-//   } catch (error) {
-//     res.send({
-//       ok: false,
-//       error: error.message
-//     });
-//   }
-// });
-
-http://localhost:5665/users/signup
 
 module.exports=route

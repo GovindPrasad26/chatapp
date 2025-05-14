@@ -12,16 +12,14 @@ function ChatFooter() {
   
     return (
       <div style={style}>
-        {/* Left Section */}
+       
         <div style={{ display: 'flex', gap: '50px' }}>
           <i className="bi bi-plus-lg" style={{ fontSize: '30px', marginLeft: '40px' }}></i>
           <i className="bi bi-file-earmark-text-fill" style={{ fontSize: '30px',marginRight: '10px' }}></i>
         </div>
   
-        {/* Input Section */}
-        <input type="text" style={{backgroundColor:'white',border:'none',height:'2px',   border: 'none',outline: 'none'}} />
-  
-        {/* Right Section */}
+     
+        <input type="text" style={{backgroundColor:'white',border:'none',height:'2px',outline: 'none'}} />
         <div>
           <i className="bi bi-send" style={{ fontSize: '30px', marginRight: '30px' }}></i>
         </div>

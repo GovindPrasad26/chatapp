@@ -4,7 +4,7 @@ const app  = express()
 app.use(express.json())
 app.use(cors())
 port =5665
-const routes =require('./routes/UserRoutes')//file path return object
+const routes =require('./routes/UserRoutes')
 app.use('/users',routes)
 const secondroute=require("./routes/chatRoutes")
 app.use('/chat',secondroute)

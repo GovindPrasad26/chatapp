@@ -19,7 +19,7 @@ route.get("/getuserchats",verifytoken,async(req,res)=>{
     error:error
    })
  }
-})//fetch collection data all chat messgae
+})
 
   
 

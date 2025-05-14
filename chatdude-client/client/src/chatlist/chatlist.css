@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 5px;
-  margin-bottom: 10px; /* 👈 add this line for gap */
+  margin-bottom: 10px; 
   border-bottom: 1px solid #ddd;
   cursor: pointer;
 }
