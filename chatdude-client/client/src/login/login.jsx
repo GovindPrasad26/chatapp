@@ -11,11 +11,29 @@ const Login = () => {
     const[Validation,setValidation]=useState({
 
     })
+    // function CheckCredentials(event) {
+
+       
+    //     event.preventDefault();
+    //     axios.post('http://localhost:5665/users/Login', state)
+    //         .then((res) => {
+    //             if (res.data.ok) {
+    //                 alert('User valid');
+    //                 localStorage.setItem("token-key", res.data.result);
+    //                 navigate('/home');
+    //             } else {
+    //                 alert("User invalid");
+    //             }
+    //         })
+    //         .catch(() => {
+    //             console.log('Error');
+    //         });
+    // }
     function CheckCredentials(event) {
 
        
         event.preventDefault();
-        axios.post('http://localhost:5665/users/Login', state)
+        axios.post('https://chatapp-2m2w.onrender.com', state)
             .then((res) => {
                 if (res.data.ok) {
                     alert('User valid');

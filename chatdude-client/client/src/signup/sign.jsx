@@ -50,7 +50,7 @@ const [validationErrors,setValidationErrors]=useState({})
 
 
     axios
-      .post("http://localhost:5665/users/signup", user)
+      .post("https://chatapp-2m2w.onrender.com/users/signup", user)
       .then((res) => {
         if (res.data.ok) {
      
@@ -72,6 +72,38 @@ const [validationErrors,setValidationErrors]=useState({})
         setError(true);
       });
   };
+  // const getNewUser = () => {
+
+  //     const errors = Validate()
+  //     if(Object.keys(errors).length > 0){
+  //        setValidationErrors(errors)
+  //        return
+  //     }
+
+
+  //   axios
+  //     .post("http://localhost:5665/users/signup", user)
+  //     .then((res) => {
+  //       if (res.data.ok) {
+     
+  //         Navigatef('/login')
+  //       }
+  //       console.log(res);
+  //       setUser({
+  //         fname: "",
+  //         lname: "",
+  //         gender: "",
+  //         email: "",
+  //         password: "",
+  //         phone: "",
+  //       });
+  //       setValidationErrors({});
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //       setError(true);
+  //     });
+  // };
 
   return (
     <div className="main-signup-container">
